@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VelilleXplore</title>
+  <!-- Referencia a Bootstrap CSS -->
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <!-- Estilos personalizados para el menú -->
+  <link rel="stylesheet" href="../css/principal.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/sitios.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Título del menú -->
+    <a class="navbar-brand" href="#">VelilleXplore</a>
+    <!-- Botón para colapsar el menú en pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Contenido del menú -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mapa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sitios o lugares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Guías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Más</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Soporte</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main><div class="container mt-5">
+    <h1 class="mb-4">Sitios Turísticos</h1>
+    <div class="row">
+      <!-- Sitio Turístico 1 -->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio1" aria-expanded="true" aria-controls="collapseSitio1">
+                <img src="icono-sitio1.png" alt="Icono Sitio 1" width="20" height="20">
+                Tuntuma pata ( piedras cansadas) - 45 km
+              </button>
+            </h2>
+            <div id="collapseSitio1" class="accordion-collapse collapse" aria-labelledby="headingSitio1" data-bs-parent="#accordionSitio1">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 1.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio1ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio1ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio1ComoLlegar" aria-expanded="false" aria-controls="collapseSitio1ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio1ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio1ComoLlegar" data-bs-parent="#accordionSitio1ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 1.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio1Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio1Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio1Mapas" aria-expanded="false" aria-controls="collapseSitio1Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio1Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio1Mapas" data-bs-parent="#accordionSitio1Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 1.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio1Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio1Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio1Imagenes" aria-expanded="false" aria-controls="collapseSitio1Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio1Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio1Imagenes" data-bs-parent="#accordionSitio1Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 1.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sitio Turístico 2 -->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio2">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio2" aria-expanded="true" aria-controls="collapseSitio2">
+                <img src="icono-sitio2.png" alt="Icono Sitio 2" width="20" height="20">
+                Alcavictoria (aguas termales)- 60 km
+              </button>
+            </h2>
+            <div id="collapseSitio2" class="accordion-collapse collapse" aria-labelledby="headingSitio2" data-bs-parent="#accordionSitio2">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 2.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio2ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio2ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio2ComoLlegar" aria-expanded="false" aria-controls="collapseSitio2ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio2ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio2ComoLlegar" data-bs-parent="#accordionSitio2ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 2.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio2Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio2Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio2Mapas" aria-expanded="false" aria-controls="collapseSitio2Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio2Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio2Mapas" data-bs-parent="#accordionSitio2Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 2.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio2Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio2Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio2Imagenes" aria-expanded="false" aria-controls="collapseSitio2Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio2Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio2Imagenes" data-bs-parent="#accordionSitio2Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 2.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Sitio 3-->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio3">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio3">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio3" aria-expanded="true" aria-controls="collapseSitio3">
+                <img src="icono-sitio3.png" alt="Icono Sitio 3" width="20" height="20">
+                Casa Blanca (capilla de Casa Blanca) - 75 km
+              </button>
+            </h2>
+            <div id="collapseSitio3" class="accordion-collapse collapse" aria-labelledby="headingSitio3" data-bs-parent="#accordionSitio3">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 3.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio3ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio3ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio3ComoLlegar" aria-expanded="false" aria-controls="collapseSitio3ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio3ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio3ComoLlegar" data-bs-parent="#accordionSitio3ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 3.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio3Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio3Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio3Mapas" aria-expanded="false" aria-controls="collapseSitio3Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio3Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio3Mapas" data-bs-parent="#accordionSitio3Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 3.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio3Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio3Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio3Imagenes" aria-expanded="false" aria-controls="collapseSitio3Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio3Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio3Imagenes" data-bs-parent="#accordionSitio3Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 3.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Sitio 4-->
+
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio4">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio4">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio4" aria-expanded="true" aria-controls="collapseSitio4">
+                <img src="icono-sitio4.png" alt="Icono Sitio 4" width="20" height="20">
+                Sitio Turístico 4 - 90 km
+              </button>
+            </h2>
+            <div id="collapseSitio4" class="accordion-collapse collapse" aria-labelledby="headingSitio4" data-bs-parent="#accordionSitio4">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 4.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio4ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio4ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio4ComoLlegar" aria-expanded="false" aria-controls="collapseSitio4ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio4ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio4ComoLlegar" data-bs-parent="#accordionSitio4ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 4.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio4Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio4Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio4Mapas" aria-expanded="false" aria-controls="collapseSitio4Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio4Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio4Mapas" data-bs-parent="#accordionSitio4Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 4.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio4Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio4Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio4Imagenes" aria-expanded="false" aria-controls="collapseSitio4Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio4Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio4Imagenes" data-bs-parent="#accordionSitio4Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 4.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sitio 5 -->
+
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio5">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio5">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio5" aria-expanded="true" aria-controls="collapseSitio5">
+                <img src="icono-sitio5.png" alt="Icono Sitio 5" width="20" height="20">
+                Sitio Turístico 5 - 105 km
+              </button>
+            </h2>
+            <div id="collapseSitio5" class="accordion-collapse collapse" aria-labelledby="headingSitio5" data-bs-parent="#accordionSitio5">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 5.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio5ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio5ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio5ComoLlegar" aria-expanded="false" aria-controls="collapseSitio5ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio5ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio5ComoLlegar" data-bs-parent="#accordionSitio5ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 5.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio5Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio5Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio5Mapas" aria-expanded="false" aria-controls="collapseSitio5Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio5Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio5Mapas" data-bs-parent="#accordionSitio5Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 5.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio5Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio5Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio5Imagenes" aria-expanded="false" aria-controls="collapseSitio5Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio5Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio5Imagenes" data-bs-parent="#accordionSitio5Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 5.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sitio 6 -->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio6">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio6" aria-expanded="true" aria-controls="collapseSitio6">
+                <img src="icono-sitio6.png" alt="Icono Sitio 6" width="20" height="20">
+                Sitio Turístico 6 - 120 km
+              </button>
+            </h2>
+            <div id="collapseSitio6" class="accordion-collapse collapse" aria-labelledby="headingSitio6" data-bs-parent="#accordionSitio6">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 6.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio6ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio6ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio6ComoLlegar" aria-expanded="false" aria-controls="collapseSitio6ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio6ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio6ComoLlegar" data-bs-parent="#accordionSitio6ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 6.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio6Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio6Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio6Mapas" aria-expanded="false" aria-controls="collapseSitio6Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio6Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio6Mapas" data-bs-parent="#accordionSitio6Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 6.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio6Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio6Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio6Imagenes" aria-expanded="false" aria-controls="collapseSitio6Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio6Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio6Imagenes" data-bs-parent="#accordionSitio6Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 6.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sitio 7-->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio7">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio7">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio7" aria-expanded="true" aria-controls="collapseSitio7">
+                <img src="icono-sitio7.png" alt="Icono Sitio 7" width="20" height="20">
+                Sitio Turístico 7 - 135 km
+              </button>
+            </h2>
+            <div id="collapseSitio7" class="accordion-collapse collapse" aria-labelledby="headingSitio7" data-bs-parent="#accordionSitio7">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 7.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio7ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio7ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio7ComoLlegar" aria-expanded="false" aria-controls="collapseSitio7ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio7ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio7ComoLlegar" data-bs-parent="#accordionSitio7ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 7.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio7Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio7Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio7Mapas" aria-expanded="false" aria-controls="collapseSitio7Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio7Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio7Mapas" data-bs-parent="#accordionSitio7Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 7.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio7Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio7Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio7Imagenes" aria-expanded="false" aria-controls="collapseSitio7Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio7Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio7Imagenes" data-bs-parent="#accordionSitio7Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 7.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sitio 8-->
+      
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio8">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio8">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio8" aria-expanded="true" aria-controls="collapseSitio8">
+                <img src="icono-sitio8.png" alt="Icono Sitio 8" width="20" height="20">
+                Sitio Turístico 8 - 150 km
+              </button>
+            </h2>
+            <div id="collapseSitio8" class="accordion-collapse collapse" aria-labelledby="headingSitio8" data-bs-parent="#accordionSitio8">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 8.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio8ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio8ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio8ComoLlegar" aria-expanded="false" aria-controls="collapseSitio8ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio8ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio8ComoLlegar" data-bs-parent="#accordionSitio8ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 8.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio8Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio8Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio8Mapas" aria-expanded="false" aria-controls="collapseSitio8Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio8Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio8Mapas" data-bs-parent="#accordionSitio8Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 8.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio8Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio8Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio8Imagenes" aria-expanded="false" aria-controls="collapseSitio8Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio8Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio8Imagenes" data-bs-parent="#accordionSitio8Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 8.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!--sitio 9-->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio9">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio9">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio9" aria-expanded="true" aria-controls="collapseSitio9">
+                <img src="icono-sitio9.png" alt="Icono Sitio 9" width="20" height="20">
+                Sitio Turístico 9 - 165 km
+              </button>
+            </h2>
+            <div id="collapseSitio9" class="accordion-collapse collapse" aria-labelledby="headingSitio9" data-bs-parent="#accordionSitio9">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 9.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio9ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio9ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio9ComoLlegar" aria-expanded="false" aria-controls="collapseSitio9ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio9ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio9ComoLlegar" data-bs-parent="#accordionSitio9ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 9.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio9Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio9Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio9Mapas" aria-expanded="false" aria-controls="collapseSitio9Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio9Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio9Mapas" data-bs-parent="#accordionSitio9Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 9.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio9Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio9Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio9Imagenes" aria-expanded="false" aria-controls="collapseSitio9Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio9Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio9Imagenes" data-bs-parent="#accordionSitio9Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 9.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Sitio 10-->
+      <div class="mb-3">
+        <div class="accordion parent-accordion" id="accordionSitio10">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSitio10">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio10" aria-expanded="true" aria-controls="collapseSitio10">
+                <img src="icono-sitio10.png" alt="Icono Sitio 10" width="20" height="20">
+                Sitio Turístico 10 - 180 km
+              </button>
+            </h2>
+            <div id="collapseSitio10" class="accordion-collapse collapse" aria-labelledby="headingSitio10" data-bs-parent="#accordionSitio10">
+              <div class="accordion-body">
+                <!-- Reseña -->
+                <h3>Reseña</h3>
+                <p>Descripción del sitio turístico 10.</p>
+                
+                <!-- Cómo Llegar -->
+                <div class="accordion child-accordion" id="accordionSitio10ComoLlegar">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio10ComoLlegar">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio10ComoLlegar" aria-expanded="false" aria-controls="collapseSitio10ComoLlegar">
+                        Cómo Llegar
+                      </button>
+                    </h2>
+                    <div id="collapseSitio10ComoLlegar" class="accordion-collapse collapse" aria-labelledby="headingSitio10ComoLlegar" data-bs-parent="#accordionSitio10ComoLlegar">
+                      <div class="accordion-body">
+                        Indicaciones para llegar al sitio turístico 10.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mapas -->
+                <div class="accordion child-accordion" id="accordionSitio10Mapas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio10Mapas">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio10Mapas" aria-expanded="false" aria-controls="collapseSitio10Mapas">
+                        Mapas
+                      </button>
+                    </h2>
+                    <div id="collapseSitio10Mapas" class="accordion-collapse collapse" aria-labelledby="headingSitio10Mapas" data-bs-parent="#accordionSitio10Mapas">
+                      <div class="accordion-body">
+                        Mapas y ubicación del sitio turístico 10.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Imágenes -->
+                <div class="accordion child-accordion" id="accordionSitio10Imagenes">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSitio10Imagenes">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSitio10Imagenes" aria-expanded="false" aria-controls="collapseSitio10Imagenes">
+                        Imágenes
+                      </button>
+                    </h2>
+                    <div id="collapseSitio10Imagenes" class="accordion-collapse collapse" aria-labelledby="headingSitio10Imagenes" data-bs-parent="#accordionSitio10Imagenes">
+                      <div class="accordion-body">
+                        Imágenes del sitio turístico 10.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Repetir la estructura anterior para más sitios turísticos -->
+      <!-- ... -->
+      
+    </div>
+  </div>
+
+  <!-- Referencia a los scripts de Bootstrap y JavaScript personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Controlar que solo se pueda abrir una sección a la vez en el deslizador padre
+    const parentAccordions = document.querySelectorAll('.parent-accordion');
+
+    parentAccordions.forEach((parentAccordion) => {
+      parentAccordion.addEventListener('show.bs.collapse', (event) => {
+        parentAccordions.forEach((otherParentAccordion) => {
+          if (otherParentAccordion !== parentAccordion) {
+            const otherCollapse = otherParentAccordion.querySelector('.accordion-collapse');
+            const otherButton = otherParentAccordion.querySelector('.accordion-button');
+
+            if (otherCollapse.classList.contains('show')) {
+              otherCollapse.classList.remove('show');
+              otherButton.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+    });
+
+    // Controlar que solo se pueda abrir una sección a la vez en los deslizadores hijos
+    const childAccordions = document.querySelectorAll('.child-accordion');
+
+    childAccordions.forEach((childAccordion) => {
+      childAccordion.addEventListener('show.bs.collapse', (event) => {
+        childAccordions.forEach((otherChildAccordion) => {
+          if (otherChildAccordion !== childAccordion) {
+            const otherCollapse = otherChildAccordion.querySelector('.accordion-collapse');
+            const otherButton = otherChildAccordion.querySelector('.accordion-button');
+
+            if (otherCollapse.classList.contains('show')) {
+              otherCollapse.classList.remove('show');
+              otherButton.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

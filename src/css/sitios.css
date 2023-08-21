@@ -1,0 +1,123 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #969090;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+/* Estilos de los lugares turísticos */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lugar {
+  width: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lugar:hover {
+  transform: translateY(-5px);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ubicacion img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos de los acordeones */
+.accordion-button {
+  background-color: #fabc12;
+  color: #212529;
+  font-weight: bold;
+}
+
+.accordion-button:hover {
+  background-color: #f9a602;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button[aria-expanded="true"] {
+  background-color: #e69500;
+  color: #fff;
+}
+
+/* Estilos de los contenidos de los acordeones */
+.accordion-body {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.child-accordion {
+  margin-left: 20px;
+}
+
+/* Estilos de las imágenes en los acordeones */
+.imagen-pequena {
+  max-width: 100px;
+  transition: all 0.3s ease;
+}
+
+.details[open] .imagen-pequena {
+  max-width: 200px;
+}
+
+.imagen-grande {
+  display: none;
+}
+
+.details[open] .imagen-grande {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+/* Media queries para diseño responsivo */
+@media screen and (max-width: 992px) {
+  .lugar {
+    width: 100%;
+  }
+}

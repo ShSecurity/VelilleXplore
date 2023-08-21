@@ -1,0 +1,53 @@
+body{
+  background-color: #6f7276;
+}
+/* Estilos para el menú fijo */
+#logo{
+  font-weight: bold;
+  color: red;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Aumentar el contenido dentro del contenedor */
+main{
+  padding-top: 60px; /* Ajustar el valor según tus necesidades */
+  margin: 15px;
+}
+
+/* Estilos para el botón del menú */
+.navbar .nav-item {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: bold;
+  color: #ffae00; /* Color del texto del menú */
+  position: relative;
+  overflow: hidden;
+
+}
+
+.navbar .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #064ed4;
+  transition: width 1s ease-out;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+  width: 100%;
+  
+}
+.contenedor{
+  
+}

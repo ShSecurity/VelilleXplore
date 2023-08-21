@@ -1,0 +1,128 @@
+/* Estilos para el contenido dentro del main */
+.contenedor {
+  width: 100%;
+  padding: 20px;
+}
+
+.contenedor h1 {
+  font-size: 30x;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFA726;
+  font-weight: bold;
+  border-bottom: solid 2px red;
+  animation: colorBordeInferior linear 10s infinite;
+}
+#destitle{
+  color: rgb(58, 5, 50);
+}
+
+.contenedor h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 30px;
+  color: #0162ff;
+  font-weight: bold;
+  background-color: #45474b;
+  border-radius: 10px;
+  
+}
+
+.contenedor p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  
+}
+
+/* Estilos para el carrusel */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.carousel-images {
+  display: flex;
+  width: 300%; /* Las imágenes ocuparán el ancho del carrusel multiplicado por la cantidad de imágenes */
+  transition: transform 0.8s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: auto;
+}
+
+/* Animaciones para el carrusel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
+
+/* Estilos para la descripción */
+.descripcion {
+  font-weight: bold;
+  border: 2px solid #989ca3;
+  border-radius: 0px 15px;
+  padding: 20px;
+  color: #001c50;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #989ca3;
+}
+.descripcion:hover{
+  border-color:rgb(227, 219, 10);
+  background-color: #45474b;
+  color:#ffffff;
+}
+
+/* Estilos para la lista de características en ordenador */
+.caracteristicas-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.caracteristicas-grid li {
+  border: 2px  solid #FFA726;
+  border-radius: 15px 0px 15px 15px;
+  padding: 20px;
+  background-color: #45474b;
+  color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: colorBorde 10s linear infinite;
+}
+
+.caracteristicas-grid li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #ff4500; /* Cambia el color del borde al hacer hover */
+  color: #110068;
+  background-color: rgb(99, 104, 109);
+  border-radius: 40px;
+}
+
+/* Estilos para la lista de características en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .caracteristicas-grid {
+    grid-template-columns: 1fr;
+  }
+  .carousel-image {
+    height: 200px; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+  }
+}
+@keyframes colorBordeInferior {
+    0%{border-bottom-color:red;}
+    50%{border-bottom-color:rgb(200, 255, 0);}
+    100%{border-bottom-color:red;}
+}
